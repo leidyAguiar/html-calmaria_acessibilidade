@@ -74,6 +74,7 @@
               tranquilidade.
             </p>
             <object
+              aria-hidden="true"
               tabindex="-1"
               data="./assets/separador-direita.svg"
               type="image/svg+xml"
@@ -90,6 +91,7 @@
               encontra seu paraíso particular.
             </p>
             <object
+              aria-hidden="true"
               tabindex="-1"
               data="./assets/separador-esquerda.svg"
               type="image/svg+xml"
@@ -206,7 +208,10 @@
           class="container__contato--form"
         >
           <div class="container__contato--form-conteudo">
-            <h5 class="container__contato--form-conteudo-titulo">
+            <h5
+              id="titulo-contato"
+              class="container__contato--form-conteudo-titulo"
+            >
               Entre em contato
             </h5>
             <p class="container__contato--form-conteudo-texto">
@@ -239,21 +244,21 @@
               name="telefone"
               required
             />
-            <fieldset>
+            <fieldset aria-labelledby="titulo-contato">
               <legend class="container__contato--inputs--titulo">
                 Prefere contato por:
               </legend>
               <div class="container__contato--inputs--div">
                 <div>
-                  <input type="radio" id="ligacao" name="ligacao" />
+                  <input type="radio" id="ligacao" name="contato" />
                   <label for="ligacao">Ligação</label>
                 </div>
                 <div>
-                  <input type="radio" id="whatsapp" name="whatsapp" />
+                  <input type="radio" id="whatsapp" name="contato" />
                   <label for="whatsapp">WhatsApp</label>
                 </div>
                 <div>
-                  <input type="radio" id="email-contato" name="email-contato" />
+                  <input type="radio" id="email-contato" name="contato" />
                   <label for="email-contato">Email</label>
                 </div>
               </div>
