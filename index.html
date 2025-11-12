@@ -154,7 +154,7 @@
           src="./assets/mandala-esquerda-tablet.svg"
           alt=""
         />
-        <div class="container__incricao--div">
+        <form class="container__incricao--div">
           <h4 class="container__incricao--form-titulo">
             Inscreva-se para ganhar descontos!
           </h4>
@@ -168,10 +168,11 @@
               id="inscricao"
               type="email"
               name="email-inscricao"
+              required
             />
             <button>Inscrever</button>
           </div>
-        </div>
+        </form>
         <img
           class="container__incricao--mobile"
           src="./assets/mandala-inferior-mobile.svg"
@@ -199,7 +200,7 @@
             alt="Mulher em uma banheira com pétalas de rosa, com apenas mãos e pernas aparentes, segurando um livro e com uma bandeija com uvas e chá."
           />
         </div>
-        <div
+        <form
           action="."
           id="contato-formulario"
           class="container__contato--form"
@@ -220,6 +221,7 @@
               placeholder="Digite seu nome completo"
               id="nome"
               name="nome"
+              required
             />
             <label for="email">Email</label>
             <input
@@ -227,6 +229,7 @@
               placeholder="Digite seu email"
               id="email"
               name="email"
+              required
             />
             <label for="telefone">Telefone</label>
             <input
@@ -234,11 +237,12 @@
               placeholder="(XX) XXXX-XXXX"
               id="telefone"
               name="telefone"
+              required
             />
-            <div>
-              <p class="container__contato--inputs--titulo">
+            <fieldset>
+              <legend class="container__contato--inputs--titulo">
                 Prefere contato por:
-              </p>
+              </legend>
               <div class="container__contato--inputs--div">
                 <div>
                   <input type="radio" id="ligacao" name="ligacao" />
@@ -253,17 +257,18 @@
                   <label for="email-contato">Email</label>
                 </div>
               </div>
-            </div>
+            </fieldset>
             <label for="mensagem">Mensagem</label>
             <textarea
               type="text"
               placeholder="Escreva sua mensagem"
+              maxlength="500"
               id="mensagem"
               name="mensagem"
             ></textarea>
           </div>
           <button>Enviar</button>
-        </div>
+        </form>
       </section>
     </main>
 
